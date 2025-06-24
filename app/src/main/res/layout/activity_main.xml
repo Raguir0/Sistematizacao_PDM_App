@@ -11,7 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id='@+id/textview'
-        android:text="To Do List"
+        android:text="Tarefas"
         android:textSize="32sp"
         android:textColor="#000"
         android:textStyle="bold"
@@ -31,6 +31,7 @@
         android:id="@+id/fab"
         android:src="@drawable/baseline_add_24"
         android:contentDescription="@string/add_task"
+        android:backgroundTint="@color/checkBox"
         android:layout_margin="30dp" />
 
 
