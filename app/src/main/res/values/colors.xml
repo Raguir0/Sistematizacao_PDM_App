@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-<color name="colorPrimary">#192A56</color>
-<color name="colorPrimaryDark">#0A3D62</color>
-<color name="colorAccent">#192A56</color>
-<color name="colorWhite">#FFFFFF</color>
+    <color name="colorPrimary">#192A56</color>
+    <color name="colorPrimaryDark">#43054E</color>
+    <color name="colorAccent">#192A56</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="checkBox">#C00088</color>
+    <color name="saveButton">#330066</color>
+
 
 </resources>
