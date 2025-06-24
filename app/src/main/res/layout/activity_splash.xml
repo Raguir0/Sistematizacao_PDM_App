@@ -16,7 +16,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="To Do App"
+        android:text="Zask"
         android:textColor="@color/colorWhite"
         android:textSize="40sp"
         android:textStyle="bold"
