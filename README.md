@@ -53,6 +53,7 @@ Oferecer uma solução simples, prática e eficiente para gerenciamento de taref
 ✔️ Design responsivo e acessível  
 
 👥 Integrantes do Grupo
+
 Gabriel
 
 João Paulo B
