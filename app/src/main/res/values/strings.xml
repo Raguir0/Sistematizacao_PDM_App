@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">To Do &amp; Task</string>
+    <string name="app_name">Zask</string>
     <string name="add_task">Adicionar nova tarefa</string>
     <string name="title_tarefas">Tarefas</string>
 
