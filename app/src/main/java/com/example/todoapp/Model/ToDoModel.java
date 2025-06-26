@@ -1,5 +1,7 @@
 package com.example.todoapp.Model;
 
+import androidx.annotation.NonNull;
+
 public class  ToDoModel {
 
     private String task;
@@ -27,5 +29,15 @@ public class  ToDoModel {
 
     public void setStatus(int status) {
         this.status = status;
+    }
+
+    @NonNull
+    @Override
+    public  String toString(){
+        return "ToDoModel{" +
+                "id=" + id +
+                ", task='" + task + '\'' +
+                ", status=" + status +
+                '}';
     }
 }
