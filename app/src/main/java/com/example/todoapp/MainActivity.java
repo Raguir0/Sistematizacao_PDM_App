@@ -1,8 +1,9 @@
 package com.example.todoapp;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.view.View;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,10 +25,12 @@ import java.util.Collections;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnDialogCloseListner  {
-
     private DatabaseHelper myDB;
     private List<ToDoModel> mList;
     private ToDoAdapter adapter;
+    private RecyclerView mRecyclerview;
+    private FloatingActionButton fab;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,31 +43,41 @@ public class MainActivity extends AppCompatActivity implements OnDialogCloseList
             return insets;
         });
 
-        RecyclerView mRecyclerview = findViewById(R.id.recyclerview);
-        FloatingActionButton fab = findViewById(R.id.fab);
+        initializeComponents();
+        setupRecyclerView();
+        setupFabButton();
+        loadTasks();
+    }
+    private void initializeComponents(){
+        mRecyclerview = findViewById(R.id.recyclerview);
+        fab = findViewById(R.id.fab);
         myDB = new DatabaseHelper(MainActivity.this);
         mList = new ArrayList<>();
         adapter = new ToDoAdapter(myDB , MainActivity.this);
+    }
 
+    private void setupRecyclerView(){
         mRecyclerview.setHasFixedSize(true);
         mRecyclerview.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerview.setAdapter(adapter);
 
-        mList = myDB.getAllTasks();
-        Collections.reverse(mList);
-        adapter.setTasks(mList);
-
-
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-              AddNewTask.newInstance().show(getSupportFragmentManager() , AddNewTask.TAG);
-            }
-        });
         ItemTouchHelper itemTouchHelper = new ItemTouchHelper(new RecyclerViewTouchHelper(adapter));
         itemTouchHelper.attachToRecyclerView(mRecyclerview);
     }
 
+    private void setupFabButton(){
+        fab.setOnClickListener(v ->
+                AddNewTask.newInstance().show(getSupportFragmentManager(), AddNewTask.TAG)
+        );
+    }
+
+    private void loadTasks(){
+        mList = myDB.getAllTasks();
+        Collections.reverse(mList);
+        adapter.setTasks(mList);
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     public void onDialogClose(DialogInterface dialogInterface) {
         mList = myDB.getAllTasks();
