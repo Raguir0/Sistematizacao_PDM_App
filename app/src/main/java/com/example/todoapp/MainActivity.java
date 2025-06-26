@@ -18,15 +18,13 @@ import com.example.todoapp.Model.ToDoModel;
 import com.example.todoapp.Utils.DatabaseHelper;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
-import java.sql.Array;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity implements OnDialogCloseListner  {
 
-    private RecyclerView mRecyclerview;
-    private FloatingActionButton fab;
     private DatabaseHelper myDB;
     private List<ToDoModel> mList;
     private ToDoAdapter adapter;
@@ -35,14 +33,15 @@ public class MainActivity extends AppCompatActivity implements OnDialogCloseList
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        mRecyclerview = findViewById(R.id.recyclerview);
-        fab = findViewById(R.id.fab);
+        RecyclerView mRecyclerview = findViewById(R.id.recyclerview);
+        FloatingActionButton fab = findViewById(R.id.fab);
         myDB = new DatabaseHelper(MainActivity.this);
         mList = new ArrayList<>();
         adapter = new ToDoAdapter(myDB , MainActivity.this);
