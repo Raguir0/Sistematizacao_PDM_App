@@ -19,6 +19,20 @@
             android:buttonTint="@color/checkBox"
             android:id="@+id/mcheckbox"
             android:text="This is Task 1"
+            android:paddingStart="8dp"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/task_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prazo: 25/06/2025 15:00"
+            android:textSize="17sp"
+            android:textColor="#888888"
+            android:layout_below="@id/mcheckbox"
+            android:layout_marginTop="4dp"
             android:paddingStart="8dp" />
 
     </RelativeLayout>

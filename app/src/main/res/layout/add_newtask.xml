@@ -1,28 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:padding="16dp">
 
     <EditText
+        android:id="@+id/edittext"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edittext"
-        android:paddingStart="7dp"
+        android:minHeight="48dp"
         android:hint="Nova Tarefa"
+        android:inputType="text"
+        android:paddingStart="7dp"
         android:paddingEnd="7dp"
-        android:inputType="text"/>
-    
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
+        android:background="@drawable/rounded_border" />
+
+    <TextView
+        android:id="@+id/date_time_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecionar data e hora"
+        android:padding="12dp"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/rounded_border"
         android:layout_below="@id/edittext"
-        android:text="Salvar"
-        android:layout_alignParentEnd="true"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+    <Button
         android:id="@+id/button_save"
-        android:textColor="@color/colorWhite"
-        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Salvar"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
         android:backgroundTint="@color/colorPrimary"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="5dp" />
+        android:layout_below="@id/date_time_picker"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="7dp" />
 
 </RelativeLayout>
