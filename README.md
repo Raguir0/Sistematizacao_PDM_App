@@ -12,7 +12,7 @@ Oferecer uma solução simples, prática e eficiente para gerenciamento de taref
 
 ## 🚀 Funcionalidades
 
-✅ Cadastro de tarefas com título
+✅ Cadastro de tarefas
 📋 Listagem de todas as tarefas registradas  
 ✏️ Edição de tarefas existentes  
 ❌ Exclusão de tarefas  
@@ -24,7 +24,7 @@ Oferecer uma solução simples, prática e eficiente para gerenciamento de taref
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **Linguagem:** Kotlin  
+- **Linguagem:** Java  
 - **Banco de dados local:** SQLite  
 - **IDE:** Android Studio  
 - **UI:** Material Design  
@@ -35,7 +35,7 @@ Oferecer uma solução simples, prática e eficiente para gerenciamento de taref
 
 - **Tela de Listagem:** exibe todas as tarefas salvas  
 - **Tela de Cadastro/Edição:** permite criar ou modificar tarefas  
-- **Tela de Detalhes:** exibe informações completas da tarefa selecionada *(se implementado)*
+- **Splash Screen: Apresenta nome do aplicativo ao abrir o App
 
 
 ## ⚙️ Requisitos Funcionais
@@ -53,10 +53,6 @@ Oferecer uma solução simples, prática e eficiente para gerenciamento de taref
 ✔️ Design responsivo e acessível  
 
 👥 Integrantes do Grupo
-
-Gabriel
-
-João Paulo B
 
 Lucas Martins
 
