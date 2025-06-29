@@ -62,3 +62,40 @@ Ramon Rodrigues
 
 License
 MIT
+
+
+📱 Como Usar o Aplicativo de Tarefas
+
+Adicionando uma nova tarefa
+
+Para adicionar uma nova tarefa, basta clicar no botão "+" localizado na tela principal. Em seguida, será aberta uma janela onde você poderá:
+
+Definir a data e a hora em que a tarefa deve ser realizada.
+
+Inserir uma descrição da tarefa.
+
+Depois de preencher essas informações, clique no botão "Salvar". A tarefa será automaticamente adicionada à lista principal do aplicativo.
+
+Editando uma tarefa
+
+Se você quiser alterar alguma informação de uma tarefa já criada, basta arrastar a tarefa para a esquerda. Isso abrirá a tela de edição, onde você poderá modificar a data, hora ou descrição. Após fazer as alterações desejadas, clique em "Salvar" novamente para atualizar a tarefa.
+
+Excluindo uma tarefa
+
+Para remover uma tarefa da sua lista, arraste a tarefa para a direita. A tarefa será excluída imediatamente, sem necessidade de confirmação.
+
+Notificações automáticas
+
+O aplicativo envia uma notificação 30 minutos antes do horário definido para cada tarefa. Essa função ajuda você a se preparar com antecedência para seus compromissos.
+
+Permissões necessárias
+
+Para que o app funcione corretamente, é necessário conceder algumas permissões no seu celular:
+
+Permissão para enviar notificações (essencial para os lembretes).
+
+Permissão para acessar data e hora do dispositivo (usada para agendar as notificações corretamente).
+
+Essas permissões podem ser ativadas manualmente nas configurações do seu aparelho, acessando:
+
+Configurações > Aplicativos > Zask (ou o nome do seu app) > Permissões.
