@@ -63,39 +63,49 @@ Ramon Rodrigues
 License
 MIT
 
-
 📱 Como Usar o Aplicativo de Tarefas
+➕ Adicionando uma nova tarefa
+Clique no botão “+” localizado na tela principal.
 
-Adicionando uma nova tarefa
+Será aberta uma janela onde você poderá:
 
-Para adicionar uma nova tarefa, basta clicar no botão "+" localizado na tela principal. Em seguida, será aberta uma janela onde você poderá:
-
-Definir a data e a hora em que a tarefa deve ser realizada.
+Definir a data e hora da tarefa.
 
 Inserir uma descrição da tarefa.
 
-Depois de preencher essas informações, clique no botão "Salvar". A tarefa será automaticamente adicionada à lista principal do aplicativo.
+Clique no botão “Salvar”.
+A tarefa será adicionada automaticamente à lista principal.
 
-Editando uma tarefa
+📝 Editando uma tarefa
+Arraste a tarefa para a esquerda.
 
-Se você quiser alterar alguma informação de uma tarefa já criada, basta arrastar a tarefa para a esquerda. Isso abrirá a tela de edição, onde você poderá modificar a data, hora ou descrição. Após fazer as alterações desejadas, clique em "Salvar" novamente para atualizar a tarefa.
+A tela de edição será aberta, permitindo modificar:
 
-Excluindo uma tarefa
+Data
 
-Para remover uma tarefa da sua lista, arraste a tarefa para a direita. A tarefa será excluída imediatamente, sem necessidade de confirmação.
+Hora
 
-Notificações automáticas
+Descrição
 
-O aplicativo envia uma notificação 30 minutos antes do horário definido para cada tarefa. Essa função ajuda você a se preparar com antecedência para seus compromissos.
+Clique em “Salvar” para atualizar a tarefa.
 
-Permissões necessárias
+🗑️ Excluindo uma tarefa
+Arraste a tarefa para a direita.
+A tarefa será excluída imediatamente, sem necessidade de confirmação.
 
-Para que o app funcione corretamente, é necessário conceder algumas permissões no seu celular:
+🔔 Notificações automáticas
+O aplicativo envia uma notificação 30 minutos antes do horário definido para cada tarefa.
+Essa funcionalidade ajuda você a se preparar com antecedência.
 
-Permissão para enviar notificações (essencial para os lembretes).
+🔐 Permissões Necessárias
+Para o funcionamento correto do app, é necessário conceder as seguintes permissões:
 
-Permissão para acessar data e hora do dispositivo (usada para agendar as notificações corretamente).
+✅ Envio de notificações (essencial para lembretes)
 
-Essas permissões podem ser ativadas manualmente nas configurações do seu aparelho, acessando:
+✅ Acesso à data e hora do dispositivo (usado para agendar notificações)
 
-Configurações > Aplicativos > Zask (ou o nome do seu app) > Permissões.
+Você pode ativar essas permissões manualmente:
+
+Configurações > Aplicativos > Zask (ou nome do app) > Permissões
+
+
